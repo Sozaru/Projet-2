@@ -1,15 +1,20 @@
 header  {
   margin: auto;
-  width: 1440px;
+  width: 90%;
   font-family: "Raleway", sans-serif;
 }
 
 body  {
   margin: auto;
-  width: 1440px;
+  width: 100%;
   font-family: "Raleway", sans-serif;
   
 }
+
+body img {
+  object-fit: cover;
+}
+
 
   .entete h1  {
     margin-left: 20px;
@@ -66,9 +71,7 @@ body  {
    margin-left: 20px;
   }
  
-  .petit  {
-  display: hide;
-  }
+
 
   .fa-location-dot  {
     background-color:#F2F2F2;
@@ -89,7 +92,7 @@ body  {
     padding: 0px;
   }
 
-  .recherche button {
+  .btn-recherche {
     border-radius: 0px 15px 15px 0px;
     background: #0065FC;
     display: flex;
@@ -99,7 +102,15 @@ body  {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .grand  {
+    background-color: #0065FC;
+    border: none;
+    color: #DEEBFF;
+  }
 
+  .petit  {
+    display: none;
+  }
   .contener img {
     width: 236px;
     height: 104px;
@@ -112,6 +123,7 @@ body  {
     width: 880px;
     height: auto;
     border-radius: 20px;
+    margin-left: 20px;
   }
 
   .hotel  {
@@ -150,6 +162,7 @@ body  {
     justify-content: flex-start;
     padding: 20px ;
     padding-left: 40px;
+    display: block;
   }
 
   .fa-star {
@@ -168,6 +181,8 @@ body  {
     border-radius: 20px;
     width: 420px;
     height: 625px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .entete-popu {
@@ -194,7 +209,7 @@ body  {
     border-radius: 20px 0px 0px 20px;
   }
 
-  .contenu  {
+  .groupe-contenu a  {
     background-color:#FFFFFF;
     width: 343px;
     height: 144px;
@@ -229,13 +244,16 @@ body  {
 
 
   .activite img {
-    width: 297.5px;
-    height: 380px;
+    width: 100%;
+    height: 80%;
     border-radius: 20px 20px 0px 0px;
   }
 
   .activites {
     margin-top: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
   }
 
   #titre-activite {
@@ -251,14 +269,18 @@ body  {
   .activite {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 5px 5px rgba(173, 173, 177, 0.2);
+    width: 22%;
   }
 
   .activite h3  {
-    padding-left: 20px;
+    width: 90%;
+    height: 30%;
+    justify-content: left;
+    padding: 20px;
   }
 
-  .activites h2  {
-    padding-left: 40px;
+  .activites  h2  {
+    padding: 10px;
   }
 
   .info-bot {
@@ -326,14 +348,22 @@ body  {
   .lien {
     color: black;
     text-decoration: none;
+    margin-bottom: 20px;
   }
 
   @media only screen and (max-width: 768px) {
     
-    .body {
- 
-    }    
+    header,main  {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
 
+    body img {
+      object-fit: cover;
+    }
+  
     h1  {
       width: 335px;
       height: 52px;
@@ -344,7 +374,21 @@ body  {
 
     .onglet {
       display: flex;
-      
+      justify-content: center;
+    }
+
+    .groupe-contenu a {
+      width: 85%;
+      height: 20%;
+    }
+
+    .groupe-contenu {
+      justify-content: center;
+    }
+
+    .groupe-contenu a img {
+      width: 111.67px;
+      height: 146px;
     }
 
     .i P  {
@@ -356,7 +400,6 @@ body  {
     .location {
       display: flex;
       justify-content: center;
-      gap: 15px;
       flex-direction: column-reverse;
     }
 
@@ -428,9 +471,10 @@ body  {
   }
 
   .populaires {
-    width: 375px;
+    width: 100%;
     height: auto;
     border-radius: 0px;
+    margin: 0px;
   }
 
   .hebergement  {
@@ -445,15 +489,15 @@ body  {
 
   .hotel  {
     flex-wrap: wrap;
-    width: 335px;
+    width: 100%;
     height: auto;
     gap: 0;
   }
 
-  .hebergement  h2  {
+  .hebergement h2  {
     font-size: 20px;
-    padding-right: 30%;
     padding-left: 0px;
+    margin-left: -70px;
   }
 
 
@@ -488,20 +532,163 @@ body  {
 
   .grand  {
     display: none;
-
   }
 
-  .magnifying-glass {
-    background-color: #D9D9D9;
+.petit  {
+  display: initial;
+  background-color: #0065FC;
+  border: none;
+}
+
+  .fa-magnifying-glass {
+  color: #ffffff;
   }
+
+  .top  {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .logo {
+   width: 61.09px;
+   height: 19px;
+  }
+
+  
 
 }
   @media only screen and (max-width: 1024px) and (min-width: 768px){
 
+    header,main  {
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .body {
+      margin: 0px;
+      width: auto;
+    }
+
   .location {
     flex-direction: column;
     justify-content: center;
-   
   }
+
+  .activites  {
+    width: 100%;
+    height: 30%;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activite img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .activite h3  {
+    width: 90%;
+    height: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    justify-content: left;
+    margin: 0px;
+    display: flex;
+  }
+
+  .activite {
+    width: 21%;
+    height: 270px;
+  }
+
+  .groupe-activite  {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .info-bot {
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .a-propos {
+    padding-right: 100px;
+  
+  }
+
+  .btn  {
+    margin: 10px;
+  }
+
+  .filtrediv  {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .filtrediv  h3  {
+    margin: 0px;
+  }
+
+  .i  {
+    margin-bottom: 10px;
+  }
+
+  .populaires {
+    
+    width: 100%;
+    height: 20%;
+    margin-top: 50px;
+  }
+
+  .groupe-contenu a {
+    width: 30%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .groupe-contenu a img  {
+    width: 35%;
+    height: 100%;
+  }
+
+  .info  {
+    width: 70%;
+    height: 100%;
+    font-size: 16px;
+  }
+
+  .groupe-contenu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+ 
+
+  .location {
+    justify-content: space-between;
+    height: 70%;
+  }
+
+  .hebergement  {
+    height: 60%;
+    width: 100%;
+  }
+
+  body img {
+    object-fit: cover;
+  }
+
+
+
 
   }
