@@ -294,6 +294,8 @@ body img {
   display: flex;
   background-color: #f2f2f2;
   margin-top: 60px;
+  justify-content: space-between;
+  padding-right: 50px;
 }
 
 .a-propos a {
