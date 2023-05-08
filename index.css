@@ -27,8 +27,8 @@ body img {
 }
 
 .filtrediv {
-  flex-direction: column;
   display: flex;
+  align-items: center;
 }
 
 .filtre-btn {
@@ -50,6 +50,7 @@ body img {
 .filtrediv h3 {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .btn {
@@ -403,6 +404,11 @@ margin-left: 20px;
     margin-left: 10px ;
   }
 
+  .entete {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
   .texte1 {
     margin-left: 10px ;
   }
@@ -445,6 +451,22 @@ margin-left: 20px;
     justify-content: center;
   }
 
+
+.onglet .lien:hover {
+  color: #0065fc;
+  border-bottom: solid #0065fc;
+  border-top: solid white;
+}
+
+.onglet .lien {
+  width: 50%;
+  border-bottom: solid #f2f2f2;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+}
+
   .groupe-contenu a {
     width: 84%;
     height: 20%;
@@ -480,6 +502,8 @@ margin-left: 20px;
 
   .filtrediv {
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: initial;
   }
 
   .btn {
@@ -632,20 +656,7 @@ margin-left: 20px;
     margin-top: 20px;
   }
 
-  .onglet .lien:hover {
-    color: #0065fc;
-    border-bottom: solid #0065fc;
-    border-top: 0;
-  }
 
-  .onglet .lien {
-    width: 50%;
-    border-bottom: solid #f2f2f2;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0px;
-  }
 }
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   header,
@@ -655,8 +666,8 @@ margin-left: 20px;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .body {
@@ -727,6 +738,7 @@ margin-left: 20px;
   .filtrediv {
     flex-direction: column;
     margin-bottom: 10px;
+    align-items: initial;
   }
 
   .filtrediv h3 {
