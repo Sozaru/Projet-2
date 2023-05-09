@@ -3,9 +3,10 @@ header ,main  {
 }
 
 body {
-  width: 100%;
+  width: 95%;
   font-family: "Raleway", sans-serif;
   margin-top: 0px;
+  margin-left: 2%;
 }
 
 body img {
@@ -661,8 +662,6 @@ margin-left: 20px;
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   header,
   main {
-    width: 90%;
-    margin: auto;
     justify-content: center;
     display: flex;
     flex-direction: column;
